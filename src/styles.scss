@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --lake-blue: #A5C7EF;
+  --sage-green: #B5BC80;
+  --warm-gold: #EFBF04;
+  --earth-gold: #856A02;
+  --soft-cloud: #F5F9FD;
+  --charcoal: #2C3E50;
+  --ice-blue: #EBF2FA;
+  --light-slate: #f1f5f9;
+  --slate-gray: #cbd5e1;
+  --muted-slate: #64748b;
+  --white: #FFFFFF;
+  --ink: var(--charcoal);
+  --muted: var(--muted-slate);
+  --border: rgba(44, 62, 80, 0.16);
+  --shadow: 0 24px 55px rgba(44, 62, 80, 0.12);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  background:
+    radial-gradient(circle at top, #f9fbff 0%, var(--ice-blue) 24%, #edf3f9 100%);
+  color: var(--ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
